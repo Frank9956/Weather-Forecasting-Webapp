@@ -1,0 +1,511 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-variant-caps: all-petite-caps;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.card {
+
+    display: flex;
+    border-radius: 30px;
+    padding-left: 16px;
+    background: #DDDDDD;
+    color: #2F343A;
+    opacity: 90%;
+    width: 50em;
+    height: 20em;
+    padding-bottom: 100px;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 2em;
+    z-index: -1;
+    position: ;
+
+}
+
+.card:hover {
+    color: #DDDDDD;
+    background-color: #2F343A;
+
+
+}
+
+.search {
+
+
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    background-color: #DDDDDD;
+    height: 52px;
+    border-radius: 38px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10em;
+    justify-self: center;
+    transition: 0.3s ease-in-out;
+
+}
+
+.search:hover {
+
+    background-color: #2F343A;
+}
+
+input.search-bar {
+    font-size: 120%;
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 1px 20px;
+    font-size: 25px;
+    font-variant-caps: all-petite-caps;
+
+
+}
+
+button {
+    border: none;
+    outline: none;
+    margin: 1px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #936565;
+    transition: 0.3s ease-in-out;
+
+}
+
+button:hover {
+    background-color: #2F343A;
+    border-style: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    position: relative;
+    bottom: 1em;
+    font-family: 'Poppins', sans-serif;
+    color: #dddddd;
+    margin-top: 1em;
+}
+
+.navbar {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    height: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #BDB69C;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+
+}
+
+
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+ul.nav-list {
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    width: auto;
+    gap: 10em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+li {
+    padding: inherit;
+}
+
+.nav-list li a {
+
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 20px;
+    font-size: 50px;
+    font-variant-caps: all-petite-caps;
+    padding-bottom: 9px;
+    background: rgba(248, 249, 249, 0);
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: #2F343A;
+}
+
+.note {
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    font-size: 50px;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #41AAC4;
+    border-radius: 200px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.note:hover {
+    color: #2F343A;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.top {
+    display: flex;
+    gap: 1px;
+    height: 105px;
+}
+
+.city {
+    font-size: 90px;
+    padding-top: 20px;
+}
+
+.country {
+    font-size: 60px;
+}
+
+.basic {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-self: center;
+
+}
+
+.icon {
+    display: flex;
+    justify-self: center;
+    margin-top: 30px;
+    background-color: rgb(215, 215, 225);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.b1 {
+    padding-left: 55px;
+}
+
+.b2 {
+    display: flex;
+    flex-direction: row;
+    height: 15em;
+    align-items: center;
+    padding-left: 55px;
+}
+
+.b3 {
+    width: 60%;
+    padding-left: 10px;
+}
+
+h1.temp {
+    height: 65px;
+}
+
+.temp {
+    font-size: 70px;
+}
+
+.description {
+    font-size: 30px;
+}
+
+.details {
+    width: 50%;
+    font-size: 30px;
+    flex-direction: column;
+    justify-items: end;
+    text-align: end;
+    align-self: flex-end;
+    padding-right: 25px;
+}
+
+
+.future-forecast {
+    padding: 25px;
+    bottom: 0;
+    margin-top: 1em;
+    display: flex;
+    color: white;
+    width: 95%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.future-forecast .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    padding-right: 40px;
+    width: 30em;
+    height: 20em;
+    margin-right: 10px;
+
+
+}
+
+.back {
+    background-color: rgba(248, 249, 249, 0.638);
+    opacity: 90%;
+    border-radius: 30px;
+    color: #3a3b4ee4;
+    margin-right: 11px;
+    transition: 0.3s ease-in-out;
+}
+
+.future-forecast ::-webkit-scrollbar {
+    height: 6px;
+}
+
+.future-forecast ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.future-forecast ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.future-forecast .today .day {
+    padding: 5px 15px;
+    background: #2F343A;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 5em;
+    color: rgba(248, 249, 249, 0.638);
+    transition: 0.3s ease-in-out;
+    font-size: 30px;
+}
+
+.future-forecast .today .day:hover {
+    color: #3a3b4ee4;
+    background: rgba(248, 249, 249, 0.638);
+}
+
+.future-forecast .today .temp {
+    font-size: 30px;
+    padding-top: 25px;
+}
+
+.future-forecast .weather-forecast {
+    display: flex;
+}
+
+img.w-icon {
+    background-color: white;
+    border-radius: 100px;
+    margin: 15px;
+}
+
+.weather-forecast .weather-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 15px;
+    color: #3a3b4ee4;
+    border-radius: 30px;
+    height: 20em;
+    width: 11em;
+    background: rgba(248, 249, 249, 0.638);
+    transition: 0.3s ease-in-out;
+}
+
+
+.weather-forecast .weather-forecast-item .day {
+    padding: 5px 15px;
+    background: #2F343A;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-size: 30px;
+    color: rgba(248, 249, 249, 0.638);
+    transition: 0.3s ease-in-out;
+}
+
+.weather-forecast .weather-forecast-item .day:hover {
+    color: #3a3b4ee4;
+    background: rgba(248, 249, 249, 0.638);
+}
+
+.weather-forecast .weather-forecast-item .temp {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.back:hover {
+    color: rgb(205, 205, 205);
+    background-color: #2F343A;
+}
+
+.weather-forecast .weather-forecast-item:hover {
+    background-color: #2F343A;
+    color: rgb(205, 205, 205);
+}
+
+
+@media only screen and (max-width:730px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .future-forecast .today .temp {
+        font-size: 16px;
+    }
+
+    .date-container .time {
+        font-size: 50px;
+    }
+
+    .date-container #am-pm {
+        font-size: 20px;
+    }
+
+    .date-container .date {
+        font-size: 20px;
+    }
+
+    .place-container {
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .place-container .time-zone {
+        font-size: 20px;
+    }
+
+    .current-info .others {
+        padding: 12px;
+    }
+
+    .current-info .others .weather-item {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #80CEB9 50%, #41AAC4 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+.content {
+
+    border-radius: .25em;
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
